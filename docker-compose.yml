@@ -1,0 +1,6 @@
+﻿services:
+  matflix:
+    image: matflix
+    build:
+      context: .
+      dockerfile: MatFlix/Dockerfile

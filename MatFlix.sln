@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatFlix", "MatFlix\MatFlix.csproj", "{E65CBC1F-8248-4063-BF2F-0BF0C23DBEC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7C21C27-FF9D-4238-BAD0-3951AEB916E2}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{CC824500-F56D-42A7-87B5-DE50B9D8A0FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E65CBC1F-8248-4063-BF2F-0BF0C23DBEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65CBC1F-8248-4063-BF2F-0BF0C23DBEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65CBC1F-8248-4063-BF2F-0BF0C23DBEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65CBC1F-8248-4063-BF2F-0BF0C23DBEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC824500-F56D-42A7-87B5-DE50B9D8A0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC824500-F56D-42A7-87B5-DE50B9D8A0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC824500-F56D-42A7-87B5-DE50B9D8A0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC824500-F56D-42A7-87B5-DE50B9D8A0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

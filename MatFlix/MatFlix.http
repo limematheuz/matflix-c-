@@ -1,0 +1,6 @@
+@MatFlix_HostAddress = http://localhost:5009
+
+GET {{MatFlix_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
