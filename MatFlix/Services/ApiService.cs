@@ -5,12 +5,12 @@ namespace MatFlix.Services
     public class ApiService
     {
         private readonly HttpClient _httpClient;
-        private readonly string _bearerToken;
+        private readonly string? _bearerToken;
 
         public ApiService(HttpClient httpClient, IConfiguration configuration)
         {
             _httpClient = httpClient;
-            _bearerToken = configuration["TmdbBearerToken"];
+            _bearerToken = configuration["TmbdBearerToken"];
         }
 
         public async Task<JsonDocument> GetApiDataAsync(string url)
