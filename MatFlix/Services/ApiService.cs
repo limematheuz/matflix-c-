@@ -10,7 +10,11 @@ namespace MatFlix.Services
         public ApiService(HttpClient httpClient, IConfiguration configuration)
         {
             _httpClient = httpClient;
-            _bearerToken = configuration["TmbdBearerToken"];
+            _bearerToken = Environment.GetEnvironmentVariable("TmbdBearerToken") ?? configuration["TmbdBearerToken"];
+            if (string.IsNullOrEmpty(_bearerToken))
+            {
+                throw new InvalidOperationException("Bearer token is not configured.");
+            }
         }
 
         public async Task<JsonDocument> GetApiDataAsync(string url)
@@ -33,3 +37,7 @@ namespace MatFlix.Services
         }
     }
 }
+
+// mribeiro17.info@gmail.com
+
+//http://matflix-c2ffebfncbcmb6hp.eastus-01.azurewebsites.net
