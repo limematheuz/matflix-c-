@@ -16,6 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient<ApiService>();
 builder.Services.AddScoped<IImdbRepository, ImdbRepository>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 builder.Configuration.AddJsonFile("appsettings.json");
 
