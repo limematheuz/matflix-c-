@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MatFlix.Migrations
 {
     /// <inheritdoc />
-    public partial class SeedRole : Migration
+    public partial class Identity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -163,8 +163,8 @@ namespace MatFlix.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "c475ffe6-41f4-4473-8c8d-3f4d622e395f", null, "User", "USER" },
-                    { "f0a8bf95-b976-47c1-8865-d1da780f80c3", null, "Admin", "ADMIN" }
+                    { "09f6657a-2127-46b8-91a6-d16695cbd5ad", null, "User", "USER" },
+                    { "fad8ead8-8dcd-40df-818a-0dbfaad20716", null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.CreateIndex(

@@ -116,13 +116,13 @@ namespace MatFlix.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f0a8bf95-b976-47c1-8865-d1da780f80c3",
+                            Id = "fad8ead8-8dcd-40df-818a-0dbfaad20716",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "c475ffe6-41f4-4473-8c8d-3f4d622e395f",
+                            Id = "09f6657a-2127-46b8-91a6-d16695cbd5ad",
                             Name = "User",
                             NormalizedName = "USER"
                         });
