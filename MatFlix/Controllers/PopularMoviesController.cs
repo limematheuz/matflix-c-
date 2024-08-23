@@ -14,7 +14,7 @@ namespace MatFlix.Controllers
         {
             _repository = imdbRepository;
         }
-        [Authorize]
+        // [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetPopularMovies()
         {
