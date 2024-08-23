@@ -1,4 +1,5 @@
 using MatFlix.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MatFlix.Controllers
@@ -13,7 +14,7 @@ namespace MatFlix.Controllers
         {
             _repository = imdbRepository;
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetPopularMovies()
         {
